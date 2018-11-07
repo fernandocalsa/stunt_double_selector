@@ -6,6 +6,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
+    "react-draggable": "^3.0.5",
+    "react-icons": "^3.2.2",
     "react-scripts": "2.1.1"
   },
   "scripts": {
@@ -30,6 +32,8 @@
     "react-test-renderer": "^16.6.1"
   },
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

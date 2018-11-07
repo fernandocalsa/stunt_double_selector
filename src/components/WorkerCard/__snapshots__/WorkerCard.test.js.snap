@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorkerCard Should render the worker info and buttons 1`] = `
+<div
+  style={
+    Object {
+      "width": 500,
+    }
+  }
+>
+  <Draggable
+    allowAnyClick={false}
+    axis="x"
+    bounds={false}
+    cancel={null}
+    defaultClassName="react-draggable"
+    defaultClassNameDragged="react-draggable-dragged"
+    defaultClassNameDragging="react-draggable-dragging"
+    defaultPosition={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    disabled={false}
+    enableUserSelectHack={true}
+    grid={null}
+    handle={null}
+    offsetParent={null}
+    onDrag={[Function]}
+    onMouseDown={[Function]}
+    onStart={[Function]}
+    onStop={[Function]}
+    position={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+    transform={null}
+  >
+    <div>
+      <WorkerInfo
+        firstName="Charlie"
+        imageUrl="test.jpg"
+        lastName="Simpson"
+      />
+    </div>
+  </Draggable>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "space-between",
+        "margin": "10px 0",
+      }
+    }
+  >
+    <FaCheckCircle
+      id="approveBtn"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "green",
+          "height": 50,
+          "width": 50,
+        }
+      }
+    />
+    <FaTimesCircle
+      id="rejectBtn"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "red",
+          "height": 50,
+          "width": 50,
+        }
+      }
+    />
+  </div>
+</div>
+`;
