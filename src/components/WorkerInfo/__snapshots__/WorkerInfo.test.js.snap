@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorkerInfo Should render the image and the name 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "border": "#000 solid 1px",
+      "borderRadius": 10,
+      "display": "flex",
+      "flexDirection": "column",
+      "padding": "5px 20px",
+      "width": "100%",
+    }
+  }
+>
+  <img
+    alt="Charlie Simpson"
+    src="test.jpg"
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  />
+  <span
+    style={
+      Object {
+        "fontFamily": "Tahoma, Geneva, sans-serif",
+        "fontSize": 20,
+      }
+    }
+  >
+    Charlie
+     
+    Simpson
+  </span>
+</div>
+`;
