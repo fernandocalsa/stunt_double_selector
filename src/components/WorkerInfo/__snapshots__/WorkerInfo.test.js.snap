@@ -16,6 +16,7 @@ exports[`WorkerInfo Should render the image and the name 1`] = `
 >
   <img
     alt="Charlie Simpson"
+    draggable="false"
     src="test.jpg"
     style={
       Object {
