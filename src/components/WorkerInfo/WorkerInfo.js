@@ -7,6 +7,7 @@ const WorkerInfo = (props) => {
   return (
     <div style={styles.container}>
       <img
+      draggable="false"
         style={styles.image}
         src={imageUrl}
         alt={`${firstName} ${lastName}`}
