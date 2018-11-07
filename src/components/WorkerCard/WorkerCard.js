@@ -3,13 +3,17 @@ import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa'
 import Draggable from 'react-draggable'
 import WorkerInfo from '../WorkerInfo'
 import styles from './styles'
+import propTypes from './prop-types'
 
 class WorkerCard extends Component {
+  static propTypes = propTypes
+  reject = () => this.props.onHandleWorker(false)
+  approve = () => this.props.onHandleWorker(true)
   handleStop = (e, data) => {
     if (data.lastX < -100) {
-      console.log('reject')
+      this.reject()
     } else if (data.lastX > 100) {
-      console.log('approve')
+      this.approve()
     }
   }
   render() {
@@ -27,16 +31,12 @@ class WorkerCard extends Component {
           }}
         >
           <div>
-          <WorkerInfo
-            imageUrl="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg"
-            firstName="Fer"
-            lastName="Calvo"
-          />
+          <WorkerInfo {...this.props.worker} />
           </div>
         </Draggable>
         <div style={styles.buttons}>
-          <FaCheckCircle style={styles.iconApprove}/>
-          <FaTimesCircle style={styles.iconReject} />
+          <FaCheckCircle style={styles.iconApprove} onClick={this.approve} />
+          <FaTimesCircle style={styles.iconReject} onClick={this.reject} />
         </div>
       </div>
     )
