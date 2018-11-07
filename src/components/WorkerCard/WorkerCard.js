@@ -35,8 +35,8 @@ class WorkerCard extends Component {
           </div>
         </Draggable>
         <div style={styles.buttons}>
-          <FaCheckCircle style={styles.iconApprove} onClick={this.approve} />
-          <FaTimesCircle style={styles.iconReject} onClick={this.reject} />
+          <FaCheckCircle id="approveBtn" style={styles.iconApprove} onClick={this.approve} />
+          <FaTimesCircle id="rejectBtn" style={styles.iconReject} onClick={this.reject} />
         </div>
       </div>
     )
