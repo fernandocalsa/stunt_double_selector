@@ -27,9 +27,11 @@ export default {
   effects: (dispatch) => ({
     approve(workerId) {
       dispatch.workers.updateApprovedStatus({ workerId, approved: true})
+      dispatch.notification.display('Approved')
     },
     reject(workerId) {
       dispatch.workers.updateApprovedStatus({ workerId, approved: false})
+      dispatch.notification.display('Rejected')
     },
     async load() {
       const page = Math.floor(Math.random() * 100)
