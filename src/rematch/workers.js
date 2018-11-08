@@ -36,8 +36,16 @@ export default {
     async load() {
       const page = Math.floor(Math.random() * 100)
       const url = `https://api.themoviedb.org/3/search/person?query=a&page=${page}&api_key=${apiKey}`
-      const response = await fetch(url)
-      const body = await response.json()
+      let body
+      try {
+        const response = await fetch(url)
+        body = await response.json()
+        if (body.success === false) {
+          throw new Error()
+        }
+      } catch(e) {
+        return dispatch.notification.display('Error fetching actors')
+      }
       const people = body.results
         .filter(({ profile_path }) => !!profile_path)
         .slice(0, 10)
