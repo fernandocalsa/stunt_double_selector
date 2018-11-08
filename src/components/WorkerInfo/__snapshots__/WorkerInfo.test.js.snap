@@ -15,7 +15,7 @@ exports[`WorkerInfo Should render the image and the name 1`] = `
   }
 >
   <img
-    alt="Charlie Simpson"
+    alt="Charlie"
     draggable="false"
     src="test.jpg"
     style={
@@ -33,8 +33,6 @@ exports[`WorkerInfo Should render the image and the name 1`] = `
     }
   >
     Charlie
-     
-    Simpson
   </span>
 </div>
 `;

@@ -41,9 +41,8 @@ exports[`WorkerCard Should render the worker info and buttons 1`] = `
   >
     <div>
       <WorkerInfo
-        firstName="Charlie"
         imageUrl="test.jpg"
-        lastName="Simpson"
+        name="Charlie"
       />
     </div>
   </Draggable>

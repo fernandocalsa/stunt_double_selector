@@ -3,16 +3,16 @@ import styles from './styles'
 import propTypes from './prop-types'
 
 const WorkerInfo = (props) => {
-  const { imageUrl, firstName, lastName } = props
+  const { imageUrl, name } = props
   return (
     <div style={styles.container}>
       <img
         draggable="false"
         style={styles.image}
         src={imageUrl}
-        alt={`${firstName} ${lastName}`}
+        alt={name}
         />
-      <span style={styles.name}>{firstName} {lastName}</span>
+      <span style={styles.name}>{name}</span>
     </div>
   )
 }

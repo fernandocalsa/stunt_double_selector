@@ -7,8 +7,7 @@ describe('WorkerCard', () => {
     const props = {
       worker: {
         imageUrl: "test.jpg",
-        firstName: "Charlie",
-        lastName: "Simpson"
+        name: "Charlie"
       },
       onHandleWorker: jest.fn()
     }
@@ -20,8 +19,7 @@ describe('WorkerCard', () => {
     const props = {
       worker: {
         imageUrl: "test.jpg",
-        firstName: "Charlie",
-        lastName: "Simpson"
+        name: "Charlie"
       },
       onHandleWorker: jest.fn()
     }
@@ -34,8 +32,7 @@ describe('WorkerCard', () => {
     const props = {
       worker: {
         imageUrl: "test.jpg",
-        firstName: "Charlie",
-        lastName: "Simpson"
+        name: "Charlie"
       },
       onHandleWorker: jest.fn()
     }
@@ -48,8 +45,7 @@ describe('WorkerCard', () => {
     const props = {
       worker: {
         imageUrl: "test.jpg",
-        firstName: "Charlie",
-        lastName: "Simpson"
+        name: "Charlie"
       },
       onHandleWorker: jest.fn()
     }
@@ -62,8 +58,7 @@ describe('WorkerCard', () => {
     const props = {
       worker: {
         imageUrl: "test.jpg",
-        firstName: "Charlie",
-        lastName: "Simpson"
+        name: "Charlie"
       },
       onHandleWorker: jest.fn()
     }
@@ -76,8 +71,7 @@ describe('WorkerCard', () => {
     const props = {
       worker: {
         imageUrl: "test.jpg",
-        firstName: "Charlie",
-        lastName: "Simpson"
+        name: "Charlie"
       },
       onHandleWorker: jest.fn()
     }
