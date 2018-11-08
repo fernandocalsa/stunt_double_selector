@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentWorker When there is a current worker it displays the worker card 1`] = `
+<WorkerCard
+  onHandleWorker={[Function]}
+  worker={
+    Object {
+      "id": "testId",
+      "imageUrl": "test.jpg",
+      "name": "Test",
+    }
+  }
+/>
+`;
+
+exports[`CurrentWorker When there is no a current worker it displays a button 1`] = `
+<button
+  onClick={[MockFunction]}
+>
+  Load more actors
+</button>
+`;
